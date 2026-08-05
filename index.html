@@ -1,104 +1,288 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导航主页</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            height: 100vh;
-            overflow: hidden;
-            background: #090914;
-            color: #ffffff;
-            font-family: system-ui, sans‑serif;
-        }
-        #bgCanvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
-        }
-        .main {
-            position: relative;
-            z-index: 1;
-            height: 100vh;
-            display: flex;
-            flex‑direction: column;
-            align‑items: center;
-            justify‑content: center;
-            gap: 24px;
-        }
-        .link-item {
-            color: #73d1ff;
-            text‑decoration: none;
-            font‑size: 20px;
-            padding: 10px 22px;
-            border‑radius: 10px;
-            background: rgba(255,255,255,0.05);
-            backdrop‑filter: blur(8px);
-            transition: 0.25s;
-        }
-        .link-item:hover {
-            background: rgba(115,209,255,0.18);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>魔法导航面板</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  min-height:100vh;
+  font-family:"Segoe UI",system-ui,sans-serif;
+  color:#fff;
+  overflow-x:hidden;
+}
+#magic-bg{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:0;
+}
+.overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:radial-gradient(circle at center, rgba(18,7,43,0.45), rgba(5,2,15,0.75));
+  z-index:1;
+  pointer-events:none;
+}
+.container{
+  position:relative;
+  z-index:2;
+  max-width:1200px;
+  margin:0 auto;
+  padding:60px 24px;
+}
+.title{
+  text-align:center;
+  font-size:48px;
+  font-weight:900;
+  letter-spacing:2px;
+  background:linear-gradient(135deg,#c084ff,#5de0ff,#ff48c4);
+  -webkit-background-clip:text;
+  color:transparent;
+  margin-bottom:60px;
+  text-shadow:0 0 50px rgba(192,132,255,0.35);
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:28px;
+}
+.card{
+  position:relative;
+  padding:32px 24px;
+  border-radius:18px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(192,132,255,0.25);
+  backdrop-filter:blur(18px);
+  text-align:center;
+  cursor:pointer;
+  transition:0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+  overflow:hidden;
+}
+.card::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.12),transparent);
+  transition:0.45s;
+}
+.card:hover::before{
+  left:100%;
+}
+.card:hover{
+  transform:translateY(-10px) scale(1.04);
+  border-color:#c084ff;
+  box-shadow:0 0 35px rgba(192,132,255,0.45);
+}
+.card a{
+  text-decoration:none;
+  color:#fff;
+  font-size:21px;
+  font-weight:700;
+  display:block;
+}
+.card p{
+  margin-top:10px;
+  font-size:14px;
+  color:#cfcfcf;
+}
+@media (max-width:640px){
+  .title{
+    font-size:34px;
+  }
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+</style>
 </head>
 <body>
-<canvas id="bgCanvas"></canvas>
-<div class="main">
-    <h2>🔗快速导航</h2>
-    <a class="link-item" href="https://thanatos.ddns.ge">我的主页</a>
-    <a class="link-item" href="#">服务A</a>
-    <a class="link-item" href="#">服务B</a>
-    <a class="link-item" href="#">服务C</a>
+<canvas id="magic-bg"></canvas>
+<div class="overlay"></div>
+<div class="container">
+  <h1 class="title">✦ MAGIC NAV ✦</h1>
+  <div class="grid">
+
+    <div class="card">
+      <a href="https://thanatos.ddns.ge">🏠 我的主页</a>
+      <p>个人静态首页</p>
+    </div>
+
+    <div class="card">
+      <a href="#">☁ 网盘服务</a>
+      <p>本地外网网盘</p>
+    </div>
+
+    <div class="card">
+      <a href="#">📡 路由后台</a>
+      <p>iStoreOS 入口</p>
+    </div>
+
+    <div class="card">
+      <a href="#">🎵 音乐站点</a>
+      <p>音频服务</p>
+    </div>
+
+    <div class="card">
+      <a href="#">🖼 相册</a>
+      <p>图片浏览</p>
+    </div>
+
+    <div class="card">
+      <a href="#">🔧 工具集合</a>
+      <p>小工具面板</p>
+    </div>
+
+  </div>
 </div>
 
 <script>
-const canvas = document.getElementById('bgCanvas');
-const ctx = canvas.getContext('2d');
-let w = canvas.width = window.innerWidth;
-let h = canvas.height = window.innerHeight;
-const dots = [];
-const count = 80;
+const canvas = document.getElementById("magic-bg");
+const ctx = canvas.getContext("2d");
 
-for(let i=0;i<count;i++){
-    dots.push({
-        x:Math.random()*w,
-        y:Math.random()*h,
-        r:Math.random()*1.2+0.4,
-        dx:(Math.random()-0.5)*0.4,
-        dy:(Math.random()-0.5)*0.4
-    })
+let w, h;
+function resize(){
+  w = canvas.width = innerWidth;
+  h = canvas.height = innerHeight;
+}
+resize();
+addEventListener("resize", resize);
+
+const stars = [];
+const nebulae = [];
+const runes = [];
+const portals = [];
+
+for(let i = 0; i < 120; i++){
+  stars.push({
+    x: Math.random() * w,
+    y: Math.random() * h,
+    r: Math.random() * 1.6 + 0.4,
+    twinkle: Math.random() * Math.PI * 2,
+    speed: Math.random() * 0.015 + 0.005
+  });
 }
 
-function render(){
-    ctx.fillStyle = '#090914';
-    ctx.fillRect(0,0,w,h);
-    for(let i=0;i<dots.length;i++){
-        const p = dots[i];
-        p.x += p.dx;
-        p.y += p.dy;
-        if(p.x<0||p.x>w)p.dx*=-1;
-        if(p.y<0||p.y>h)p.dy*=-1;
-        ctx.beginPath();
-        ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
-        ctx.fillStyle = "rgba(120,200,255,0.6)";
-        ctx.fill();
+for(let i = 0; i < 12; i++){
+  nebulae.push({
+    x: Math.random() * w,
+    y: Math.random() * h,
+    radius: Math.random() * 180 + 120,
+    color: ["#c084ff","#5de0ff","#ff48c4","#7b2cbf"][Math.floor(Math.random() * 4)],
+    alpha: Math.random() * 0.18 + 0.06,
+    drift: Math.random() * 0.4 + 0.15
+  });
+}
+
+for(let i = 0; i < 36; i++){
+  runes.push({
+    x: Math.random() * w,
+    y: Math.random() * h,
+    size: Math.random() * 16 + 10,
+    char: ["◈","◇","△","▽","○","☆","✦","⊕","⋆","⌬"][Math.floor(Math.random() * 10)],
+    alpha: Math.random() * 0.35 + 0.1,
+    speed: Math.random() * 0.8 + 0.2,
+    phase: Math.random() * Math.PI * 2
+  });
+}
+
+for(let i = 0; i < 2; i++){
+  portals.push({
+    x: Math.random() * w,
+    y: Math.random() * h,
+    radius: 60 + Math.random() * 40,
+    rotation: 0,
+    color: ["#c084ff","#5de0ff"][i]
+  });
+}
+
+function draw(){
+  ctx.fillStyle = "#050210";
+  ctx.fillRect(0, 0, w, h);
+
+  nebulae.forEach(n => {
+    const grad = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.radius);
+    grad.addColorStop(0, n.color + Math.floor(n.alpha * 255).toString(16).padStart(2,"0"));
+    grad.addColorStop(0.5, n.color + Math.floor(n.alpha * 100).toString(16).padStart(2,"0"));
+    grad.addColorStop(1, "transparent");
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, w, h);
+    n.x += n.drift;
+    if(n.x > w + n.radius) n.x = -n.radius;
+  });
+
+  portals.forEach(p => {
+    ctx.save();
+    ctx.translate(p.x, p.y);
+    ctx.rotate(p.rotation);
+
+    const ring = ctx.createRadialGradient(0,0,0,0,0,p.radius);
+    ring.addColorStop(0, "transparent");
+    ring.addColorStop(0.6, p.color + "22");
+    ring.addColorStop(0.85, p.color + "88");
+    ring.addColorStop(1, "transparent");
+    ctx.fillStyle = ring;
+    ctx.fillRect(-p.radius, -p.radius, p.radius * 2, p.radius * 2);
+
+    ctx.beginPath();
+    ctx.arc(0, 0, p.radius * 0.9, 0, Math.PI * 1.5);
+    ctx.strokeStyle = p.color;
+    ctx.lineWidth = 2;
+    ctx.shadowColor = p.color;
+    ctx.shadowBlur = 15;
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    ctx.restore();
+    p.rotation += 0.008;
+  });
+
+  stars.forEach(s => {
+    s.twinkle += s.speed;
+    const alpha = 0.4 + Math.abs(Math.sin(s.twinkle)) * 0.6;
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+    ctx.shadowColor = "#ffffff";
+    ctx.shadowBlur = 6;
+    ctx.fill();
+    ctx.shadowBlur = 0;
+  });
+
+  runes.forEach(r => {
+    r.phase += r.speed * 0.012;
+    r.y -= r.speed * 0.6;
+    if(r.y < -20){
+      r.y = h + 20;
+      r.x = Math.random() * w;
     }
-    requestAnimationFrame(render);
+    ctx.save();
+    ctx.translate(r.x, r.y);
+    ctx.rotate(Math.sin(r.phase) * 0.4);
+    ctx.font = `${r.size}px serif`;
+    ctx.fillStyle = `rgba(192,132,255,${r.alpha * Math.abs(Math.sin(r.phase))})`;
+    ctx.shadowColor = "#c084ff";
+    ctx.shadowBlur = 8;
+    ctx.fillText(r.char, 0, 0);
+    ctx.restore();
+  });
+
+  requestAnimationFrame(draw);
 }
-render();
-window.addEventListener('resize',()=>{
-    w=canvas.width=innerWidth;
-    h=canvas.height=innerHeight;
-})
+draw();
 </script>
 </body>
 </html>
