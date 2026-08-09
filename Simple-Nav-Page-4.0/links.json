@@ -1,0 +1,537 @@
+[
+  {
+    "section": "常用",
+    "items": [
+      {
+         "title": "哔哩哔哩",
+        "url": "https://www.bilibili.com/",
+        "desc": "视频、动漫、弹幕",
+        "data-desc": "视频弹幕网站，涵盖动漫、学习与娱乐、B站、b站"
+      },
+      {
+        "title": "抖音",
+        "url": "https://www.douyin.com/jingxuan",
+        "desc": "短视频，精选",
+        "data-desc": "抖音精选短视频内容"
+      },
+      {
+        "title": "DeepSeek",
+        "url": "https://chat.deepseek.com/",
+        "desc": "国产最强AI",
+        "data-desc": "国产最强 AI 大模型，深度思考与代码辅助"
+      },
+      {
+        "title": "ChatGPT",
+        "url": "https://chatgpt.com/",
+        "desc": "OpenAI AI助手",
+        "data-desc": "OpenAI 旗下 AI 对话助手"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/dashboard",
+        "desc": "代码托管、开源",
+        "data-desc": "全球最大代码托管与开源协作平台"
+      },
+      {
+        "title": "Gmail",
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "desc": "Google 邮箱",
+        "data-desc": "Google 旗下电子邮件服务，谷歌邮箱"
+      },
+      {
+        "title": "Cloudflare",
+        "url": "https://dash.cloudflare.com",
+        "desc": "CDN、网络安全",
+        "data-desc": "全球领先的 CDN 与网络安全服务、大善人"
+      },
+      {
+        "title": "IMGAPI",
+        "url": "https://imgapi.cn",
+        "desc": "此导航背景API",
+        "data-desc": "此导航页背景所依赖的公开免费API"
+      },
+      {
+        "title": "王五主页",
+        "url": "https://wwzy.ccwu.cc/jianjie",
+        "desc": "个人主页",
+        "data-desc": "王五的个人主页",
+        "icon": "icons/logos/favicon.png"
+      }
+    ]
+  },
+  {
+    "section": "工具",
+    "items": [
+      {
+        "title": "QQ邮箱",
+        "url": "https://mail.qq.com",
+        "desc": "腾讯邮箱",
+        "data-desc": "腾讯 QQ 邮箱服务"
+      },
+      {
+        "title": "QQ音乐",
+        "url": "https://y.qq.com",
+        "desc": "腾讯音乐平台",
+        "data-desc": "腾讯旗下在线音乐平台"
+      },
+      {
+        "title": "网易云音乐",
+        "url": "https://music.163.com",
+        "desc": "网易音乐、歌词",
+        "data-desc": "网易旗下在线音乐平台，歌词与评论闻名"
+      },
+      {
+        "title": "地球仪",
+        "url": "https://www.webglearth.com/",
+        "desc": "3D在线地球",
+        "data-desc": "基于 WebGL 的在线3D地球仪"
+      },
+      {
+        "title": "学信网",
+        "url": "https://www.chsi.com.cn",
+        "desc": "学历查询认证",
+        "data-desc": "中国高等教育学生信息网，学历查询认证"
+      },
+      {
+        "title": "征信查询",
+        "url": "https://www.pbccrc.org.cn",
+        "desc": "个人信用报告",
+        "data-desc": "中国人民银行征信中心，个人信用报告查询"
+      },
+      {
+        "title": "测速网",
+        "url": "https://www.speedtest.cn/",
+        "desc": "网络宽带测速",
+        "data-desc": "国内网络测速工具，检测宽带上下行速度"
+      },
+      {
+        "title": "阿里图标",
+        "url": "https://www.iconfont.cn",
+        "desc": "矢量图标库",
+        "data-desc": "阿里巴巴矢量图标库"
+      },
+      {
+        "title": "Link3",
+        "url": "https://www.link3.cc/",
+        "desc": "创作者链接主页",
+        "data-desc": "Link3 创作者主页与社交链接平台"
+      },
+      {
+        "title": "30tool",
+        "url": "https://30aitool.com/",
+        "desc": "AI工具集合",
+        "data-desc": "30种AI工具集合，提升效率"
+      },
+      {
+        "title": "MikuTools",
+        "url": "https://tools.miku.ac/",
+        "desc": "在线工具箱",
+        "data-desc": "MikuTools 在线工具箱，涵盖多种实用功能"
+      },
+      {
+        "title": "千盒工具",
+        "url": "https://1000tool.com",
+        "desc": "在线工具合集",
+        "data-desc": "千盒工具箱，多种在线实用工具合集"
+      },
+      {
+        "title": "文字转语音",
+        "url": "https://ttsmaker.cn",
+        "desc": "TTS多语言配音",
+        "data-desc": "在线文字转语音，多语言多音色"
+      },
+      {
+        "title": "PDF派",
+        "url": "https://www.pdfpai.com",
+        "desc": "PDF转换处理",
+        "data-desc": "PDF派，在线PDF转换与处理工具"
+      },
+      {
+        "title": "草料二维码",
+        "url": "https://cli.im",
+        "desc": "二维码生成器",
+        "data-desc": "二维码生成器"
+      },
+      {
+        "title": "摆渡图床",
+        "url": "https://img.baidu.re",
+        "desc": "图片托管",
+        "data-desc": "免费无限图床，国内图片托管"
+      },
+      {
+        "title": "python",
+        "url": "https://www.python.org",
+        "desc": "自动化，通用",
+        "data-desc": "自动化工具，通用编程"
+      },
+      {
+        "title": "微PE工具箱",
+        "url": "https://www.wepe.com.cn",
+        "desc": "系统重装工具",
+        "data-desc": "系统重装工具"
+      },
+      {
+        "title": "FFmpeg",
+        "url": "https://ffmpeg.org",
+        "desc": "视频处理",
+        "data-desc": "压缩视频，格式转变"
+      },
+      {
+        "title": "Docker",
+        "url": "https://www.docker.com",
+        "desc": "容器化开发部署",
+        "data-desc": "Docker 容器化开发与部署平台"
+      }
+    ]
+  },
+  {
+    "section": "资源网",
+    "items": [
+      {
+        "title": "电脑系统库",
+        "url": "https://www.xitongku.com/",
+        "desc": "系统镜像下载",
+        "data-desc": "电脑系统镜像下载，Win各版本资源"
+      },
+      {
+        "title": "字幕库",
+        "url": "https://www.opensubtitles.org/zh",
+        "desc": "影视字幕下载",
+        "data-desc": "全球最大字幕库，多语言影视字幕下载"
+      },
+      {
+        "title": "葫芦侠",
+        "url": "https://www.huluxia.com",
+        "desc": "安卓游戏破解",
+        "data-desc": "葫芦侠，安卓游戏破解与资源平台"
+      },
+      {
+        "title": "pexels",
+        "url": "https://www.pexels.com/zh-cn/",
+        "desc": "免费高清素材库",
+        "data-desc": "免费高质量图片与视频素材库"
+      },
+      {
+        "title": "二次元图片",
+        "url": "https://konachan.net/",
+        "desc": "动漫壁纸社区",
+        "data-desc": "高质量二次元动漫壁纸图片社区"
+      },
+      {
+        "title": "Wallpapers",
+        "url": "https://wallpaperscraft.com",
+        "desc": "高清壁纸下载",
+        "data-desc": "高清壁纸下载，多分辨率免费壁纸"
+      },
+      {
+        "title": "腾讯软件",
+        "url": "https://pc.qq.com/",
+        "desc": "正版软件下载",
+        "data-desc": "腾讯软件中心，正版软件安全下载"
+      },
+      {
+        "title": "磁力猫",
+        "url": "https://clm20241231.xn--z7xt16d.com/",
+        "desc": "磁力资源搜索",
+        "data-desc": "磁力猫，磁力链接搜索与资源下载"
+      },
+      {
+        "title": "z-library",
+        "url": "https://z-library.sk/",
+        "desc": "电子书下载",
+        "data-desc": "全球最大电子书下载平台，z-lib，支持 PDF、EPUB，覆盖各类书籍"
+      }
+    ]
+  },
+  {
+    "section": "影视",
+    "items": [
+      {
+        "title": "央视直播",
+        "url": "https://tv.cctv.com/live/",
+        "desc": "央视频道在线直播",
+        "data-desc": "央视频道在线直播，新闻综艺体育全覆盖"
+      },
+      {
+        "title": "哔哩哔哩",
+        "url": "https://www.bilibili.com/",
+        "desc": "视频、动漫、弹幕",
+        "data-desc": "视频弹幕网站，涵盖动漫、学习与娱乐"
+      },
+      {
+        "title": "抖音",
+        "url": "https://www.douyin.com/jingxuan",
+        "desc": "抖音精选短视频",
+        "data-desc": "抖音精选短视频内容"
+      },
+      {
+        "title": "斗鱼",
+        "url": "https://www.douyu.com",
+        "desc": "游戏娱乐直播",
+        "data-desc": "斗鱼直播，游戏娱乐综合直播平台"
+      },
+      {
+        "title": "虎牙",
+        "url": "https://www.huya.com/",
+        "desc": "游戏直播平台",
+        "data-desc": "虎牙直播，国内知名游戏直播平台"
+      },
+      {
+        "title": "快手",
+        "url": "https://www.kuaishou.com/?isHome=1",
+        "desc": "短视频直播社交",
+        "data-desc": "快手，短视频与直播社交平台"
+      }
+    ]
+  },
+  {
+    "section": "国外",
+    "items": [
+      {
+        "title": "Github",
+        "url": "https://github.com/dashboard",
+        "desc": "代码托管开源",
+        "data-desc": "全球最大代码托管与开源协作平台"
+      },
+      {
+        "title": "Gmail",
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "desc": "Google邮箱",
+        "data-desc": "Google 旗下电子邮件服务"
+      },
+      {
+        "title": "Outlook",
+        "url": "https://outlook.live.com/mail",
+        "desc": "Outlook邮箱",
+        "data-desc": "Outlook旗下电子邮件邮箱服务"
+      },
+      {
+        "title": "Cloudflare",
+        "url": "https://dash.cloudflare.com",
+        "desc": "CDN 网络安全",
+        "data-desc": "全球领先的 CDN 与网络安全服务"
+      },
+      {
+        "title": "Vercel",
+        "url": "https://vercel.com",
+        "desc": "前端托管部署",
+        "data-desc": "Vercel，前端项目托管与自动化部署平台"
+      },
+      {
+        "title": "Notion",
+        "url": "https://www.notion.com",
+        "desc": "笔记协作工作台",
+        "data-desc": "Notion，全能笔记与团队协作工作台"
+      },
+      {
+        "title": "PayPal",
+        "url": "https://www.paypal.com",
+        "desc": "全球在线支付",
+        "data-desc": "PayPal，全球主流在线支付与转账平台"
+      },
+      {
+        "title": "Amazon",
+        "url": "https://www.amazon.com/",
+        "desc": "全球最大电商平台",
+        "data-desc": "全球最大综合电商平台，Amazon，亚马逊，海淘、正版图书"
+      }
+    ]
+  },
+  {
+    "section": "购物 / 生活",
+    "items": [
+      {
+        "title": "淘宝",
+        "url": "https://www.taobao.com/",
+        "desc": "国内最大C2C电商",
+        "data-desc": "阿里巴巴旗下国内最大 C2C 电商平台，淘宝，购物、二手、闲置"
+      },
+      {
+        "title": "京东",
+        "url": "https://www.jd.com/",
+        "desc": "正品自营电商",
+        "data-desc": "国内主流自营电商平台，京东，JD，正品保障，3C、家电、生鲜"
+      },
+      {
+        "title": "拼多多",
+        "url": "https://www.pinduoduo.com/",
+        "desc": "低价拼团电商",
+        "data-desc": "低价拼团社交电商平台，拼多多，农产品、百货、工厂直销"
+      },
+      {
+        "title": "闲鱼",
+        "url": "https://www.goofish.com/",
+        "desc": "二手交易平台",
+        "data-desc": "阿里旗下二手物品交易平台，闲鱼，闲置转让、捡漏好物",
+        "icon": "icons/logos/闲鱼.svg"
+      },
+      {
+        "title": "得物",
+        "url": "https://www.dewu.com/",
+        "desc": "潮流球鞋正品鉴定",
+        "data-desc": "潮流正品交易平台，得物，球鞋鉴定、潮牌、限定商品"
+      },
+      {
+        "title": "美团",
+        "url": "https://www.meituan.com/",
+        "desc": "外卖、酒店、到店",
+        "data-desc": "生活服务平台，美团，外卖配送、酒店预订、电影票、到店团购"
+      },
+      {
+        "title": "饿了么",
+        "url": "https://www.ele.me/",
+        "desc": "外卖配送平台",
+        "data-desc": "阿里旗下外卖配送平台，饿了么，餐食外卖、超市配送"
+      },
+      {
+        "title": "高德地图",
+        "url": "https://www.amap.com/",
+        "desc": "导航与地图服务",
+        "data-desc": "阿里旗下导航与地图服务，高德地图，驾车、步行、公交、打车"
+      },
+      {
+        "title": "百度地图",
+        "url": "https://map.baidu.com/",
+        "desc": "百度地图导航",
+        "data-desc": "百度旗下地图导航服务，百度地图，路线规划、周边搜索、实时路况"
+      },
+      {
+        "title": "12306",
+        "url": "https://www.12306.cn/",
+        "desc": "高铁火车票购票",
+        "data-desc": "中国铁路官方购票平台，12306，高铁、动车、火车票在线购买"
+      },
+      {
+        "title": "航旅纵横",
+        "url": "https://www.umetrip.com/",
+        "desc": "航班查询与管理",
+        "data-desc": "民航官方出品航班查询与管理应用，航旅纵横，实时航班动态"
+      }
+    ]
+  },
+  {
+    "section": "AI",
+    "items": [
+      {
+        "title": "Claude",
+        "url": "https://claude.ai/",
+        "desc": "Anthropic AI助手",
+        "data-desc": "Anthropic 旗下 AI 对话助手，擅长写作、分析与代码，Claude 3.5"
+      },
+      {
+        "title": "ChatGPT",
+        "url": "https://chatgpt.com/",
+        "desc": "OpenAI AI助手",
+        "data-desc": "OpenAI 旗下 AI 对话助手，GPT-4o，强大通用大模型"
+      },
+      {
+        "title": "Gemini",
+        "url": "https://gemini.google.com/",
+        "desc": "谷歌多模态AI",
+        "data-desc": "谷歌旗下多模态 AI 大模型，支持图文理解与对话，Gemini 1.5 Pro"
+      },
+      {
+        "title": "DeepSeek",
+        "url": "https://chat.deepseek.com/",
+        "desc": "国产顶级AI大模型",
+        "data-desc": "国产顶级 AI 大模型，深度思考、代码辅助，深度求索，DeepSeek R1",
+        "icon": "icons/logos/deepseek-copy-copy-copy-copy-copy.svg"
+      },
+      {
+        "title": "Kimi",
+        "url": "https://kimi.moonshot.cn/",
+        "desc": "月之暗面AI助手",
+        "data-desc": "月之暗面旗下 AI 助手，支持超长上下文，文件阅读与分析，Kimi"
+      },
+      {
+        "title": "文心一言",
+        "url": "https://yiyan.baidu.com/",
+        "desc": "百度AI大模型",
+        "data-desc": "百度旗下文心一言 AI 大模型，ERNIE Bot，中文理解能力强"
+      },
+      {
+        "title": "通义千问",
+        "url": "https://tongyi.aliyun.com/",
+        "desc": "阿里AI大模型",
+        "data-desc": "阿里巴巴旗下通义千问 AI 大模型，Qwen，支持长文档与多模态",
+        "icon": "icons/logos/通义千问.svg"
+      },
+      {
+        "title": "豆包",
+        "url": "https://www.doubao.com/chat/",
+        "desc": "字节跳动AI助手",
+        "data-desc": "字节跳动旗下 AI 对话助手，豆包，灵活全面，支持图片生成"
+      },
+      {
+        "title": "讯飞星火",
+        "url": "https://xinghuo.xfyun.cn/",
+        "desc": "科大讯飞AI",
+        "data-desc": "科大讯飞旗下星火大模型，语音识别强，中文场景优化"
+      },
+      {
+        "title": "海螺AI",
+        "url": "https://hailuoai.com/",
+        "desc": "MiniMax AI助手",
+        "data-desc": "MiniMax 旗下海螺 AI 助手，支持图文生成与多轮对话"
+      },
+      {
+        "title": "即梦",
+        "url": "https://jimeng.jianying.com/",
+        "desc": "字节AI图像视频生成",
+        "data-desc": "字节跳动旗下即梦，AI 图像与视频生成，剪映系产品"
+      },
+      {
+        "title": "可灵",
+        "url": "https://klingai.kuaishou.com/",
+        "desc": "快手AI视频生成",
+        "data-desc": "快手旗下可灵 AI 视频生成工具，文生视频、图生视频"
+      },
+      {
+        "title": "Suno",
+        "url": "https://suno.com/",
+        "desc": "AI音乐创作",
+        "data-desc": "AI 音乐生成平台，输入歌词或描述即可生成完整歌曲，Suno AI"
+      }
+    ]
+  },
+  {
+    "section": "游戏 / 娱乐",
+    "items": [
+      {
+        "title": "Steam",
+        "url": "https://store.steampowered.com/",
+        "desc": "PC游戏平台",
+        "data-desc": "全球最大 PC 游戏数字发行平台，Steam，V社，游戏购买与社区"
+      },
+      {
+        "title": "4399",
+        "url": "https://www.4399.com",
+        "desc": "PC小游戏平台",
+        "data-desc": "经典PC小游戏平台"
+      },
+      {
+        "title": "在线街机",
+        "url": "https://www.yikm.net/",
+        "desc": "经典街机模拟",
+        "data-desc": "在线街机模拟器，经典游戏免费畅玩"
+      }
+    ]
+  },
+  {
+    "section": "其他导航",
+    "items": [
+      {
+        "title": "Hao123",
+        "url": "https://www.hao123.com/",
+        "desc": "综合导航站",
+        "data-desc": "老牌综合网址导航站，Hao123，好123，日常常用网站入口"
+      },
+      {
+        "title": "360",
+        "url": "https://hao.360.com",
+        "desc": "综合导航站",
+        "data-desc": "老牌综合网址导航站，360，日常常用网站入口"
+      }
+    ]
+  }
+]
